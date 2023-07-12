@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 mqtt_broker = "192.168.138.237"  # Replace with your MQTT broker's URL
-mqtt_topic = "test"  # Topic to publish when the value is 1
+mqtt_topic = "control_topic"  # Topic to publish when the value is 1
 mqtt_username = "rafael"  # MQTT broker username
 mqtt_password = "rafael"  # MQTT broker password
 
