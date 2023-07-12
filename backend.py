@@ -12,11 +12,11 @@ mqtt_password = "rafael"  # MQTT broker password
 def button():
     # Toggle the value
     value = read_value()
-    if value == '1':
-        value = '0'
+    if value == "start":
+        value = "stop"
         publish_mqtt(value)
     else:
-        value = '1'
+        value = "start"
         publish_mqtt(value)
 
     # Write the updated value to the file
